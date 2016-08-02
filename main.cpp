@@ -6,7 +6,7 @@ int add(int lft, int rgt);
 
 int main()
 {
-    cout << "This world is the Lords!!!!" << endl;
+    cout << "Check it! Changes a file on the website!" << endl;
     cout << add(10, 20);
     return 0;
 }
