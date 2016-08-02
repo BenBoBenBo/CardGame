@@ -6,7 +6,7 @@ int add(int lft, int rgt);
 
 int main()
 {
-    cout << "Hello and give this world over to the Lord!!" << endl;
+    cout << "This world is the Lords!!!!" << endl;
     cout << add(10, 20);
     return 0;
 }
