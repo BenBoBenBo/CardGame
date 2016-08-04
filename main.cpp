@@ -1,12 +1,16 @@
-#include "main.h"
+#include "precomp.h"
+#include "deckofcards.h"
 
 using namespace std;
-
-int add(int lft, int rgt);
 
 int main()
 {
     cout << "Check it! Changes a file on the website! (Last Update)" << endl;
-    cout << add(10, 20);
+
+    DeckOfCards deckofcards;
+
+    deckofcards.shuffle();
+
+    cout << deckofcards.
     return 0;
 }
