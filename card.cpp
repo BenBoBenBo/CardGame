@@ -1,21 +1,21 @@
 #include "precomp.h"
 #include "card.h"
 
-public class Card
+class Card
 {
-    public static final int SPADE   = 4;
-    public static final int HEART   = 3;
-    public static final int CLUB    = 2;
-    public static final int DIAMOND = 1;
+    public:
+        int SPADE   = 4;
+        int HEART   = 3;
+        int CLUB    = 2;
+        int DIAMOND = 1;
 
-    private static final String[] Suit = { "*", "d", "c", "h", "s"};
-    private static final String[] Rank = { "*", "*", "2", "3", "4",
-            "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
+    private:
+        char Suit[] = { "*", "d", "c", "h", "s"};
+        char Rank[] = { "*", "*", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
+        char cardSuit;
+        char cardRank;
 
-    private byte cardSuit;
-    private byte cardRank;
-
-    public Card( int suit, int rank )
+    void Card( int suit, int rank )
     {
     if ( rank == 1 )
         cardRank = 14;     // Give Ace the rank 14
@@ -25,30 +25,30 @@ public class Card
         cardSuit = (byte) suit;
     }
 
-    public int suit()
+    int suit()
     {
         return ( cardSuit );         // This is a shorthand for:
                                     //   this.cardSuit
     }
 
-    public String suitStr()
+    char[] suitStr()
     {
         return( Suit[ cardSuit ] );  // This is a shorthand for:
                                     //   this.Suit[ this.cardSuit ]
     }
 
-    public int rank()
+    int rank()
     {
         return ( cardRank );
     }
 
-    public String rankStr()
+    char[] rankStr()
     {
         return ( Rank[ cardRank ] );
     }
 
 
-    public String toString()
+    char[] toString()
     {
         return ( Rank[ cardRank ] + Suit[ cardSuit ] );
     }
