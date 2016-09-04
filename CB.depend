@@ -5,3 +5,12 @@
 1470173012 h:\projects\cardgame\main.h
 	<iostream>
 
+1470263066 source:c:\projects\cardgame\add.cpp
+	"main.h"
+
+1470263066 c:\projects\cardgame\main.h
+	<iostream>
+
+1470263066 source:c:\projects\cardgame\main.cpp
+	"main.h"
+
